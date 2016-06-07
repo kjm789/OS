@@ -228,6 +228,7 @@ void join(Commands_t* cmd) {
 
 		if( (cols[j] = atoi(cmd->cmds[i])) < 1 ) {
 			fprintf(stdout, "atoi(): column \"%s\" argument must be a valid integer that greater than 0", cmd->cmds[i]);
+			fprintf(stdout, "\nFormat of join command: \n\n\t > join <file1> <col_num> <file2> <col_num> <outputFile>\n");
 			return;
 		}
 	}
