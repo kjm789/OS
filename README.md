@@ -1,5 +1,5 @@
 # Operating System's
-Implementations of common algorithms used in a Unix-like Operating System.
+Implementation of common algorithms used in a Unix-like Operating System.
 
 To be able to run these programs, you will need a Unix-like operating system. You will also need to have installed CMake package.
 	
@@ -12,8 +12,8 @@ Also, to run these programs, you will need to build the OS library such that you
 To do this, please clone the OS repository where you will change directories into the lib directory. In the lib directory, please follow the sequence of commands:
 
 				mkdir build 		[press enter]
-				cd build			[press enter]
-				cmake ..			[press enter]
+				cd build		[press enter]
+				cmake ..		[press enter]
 				sudo make install	[press enter]
 				sudo ldconfig		[press enter]
 
