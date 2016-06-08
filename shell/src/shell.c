@@ -50,7 +50,7 @@ void run_command(Commands_t* cmd){
 	}
 	else if(strncmp(cmd->cmds[0],"join",strlen("join") + 1) == 0){
 		
-		if(cmd->num_cmds % 2 != 0){
+		if(cmd->num_cmds % 2 != 0 || cmd->num_cmds < 4){
 			fprintf(stdout, "Insufficient arguments: join <file1> <col> <file2> <col> ... <fileN> <col> <output_file>");
 		}
 		else{
@@ -279,6 +279,7 @@ void join(Commands_t* cmd) {
 	pid_t pids[num_files];
 	int status;
 
+	fprintf(stdout, "\nabout to fork this shit!!\n");
 	// Fork as many times as there are passed in files
 	for(i = 0; i < num_files; ++i){
 
