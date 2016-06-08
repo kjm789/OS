@@ -237,7 +237,7 @@ const bool load_process_control_blocks_from_file(dyn_array_t* futureProcesses, c
 		if(fd != -1) 
 		{
 			//used for the number of pcbS in the binaryFileName
-			unsigned int numBlocks = NULL;
+			unsigned int numBlocks = 0;
 			//read first 32-bit unsigned representing the number of pcbS
 			if(read(fd, &numBlocks, sizeof(unsigned int)))
 			{	//declare a incrementor && buffer for each pcb 
