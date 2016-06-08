@@ -247,20 +247,17 @@ int main() {
 
     puts("\n\nE tests passed...\n");
 
-	/* Bug in function, needs to be fixed */
-    //tests_f();
+    tests_f();
 
-    //puts("\n\nF tests passed...\n");
+    puts("\n\nF tests passed...\n");
 
-	/* Bug in function, needs to be fixed */
-    //tests_g();
+    tests_g();
 
-    //puts("\n\nG tests passed...\n");
+    puts("\n\nG tests passed...\n");
 
-    /* Bug in function, needs to be fixed */
-    //tests_h();
+    tests_h();
 
-    //puts("\n\nH tests passed...\n");
+    puts("\n\nH tests passed...\n");
 
     #if DESCRIPTOR_TESTS
     tests_i();
