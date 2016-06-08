@@ -251,7 +251,8 @@ int main() {
 
     puts("\n\nF tests passed...\n");
 
-    tests_g();
+    /* This is where the bug, in this test */ 
+	tests_g();
 
     puts("\n\nG tests passed...\n");
 
