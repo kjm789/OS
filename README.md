@@ -1,5 +1,5 @@
 # Operating System's
-Implementation of common algorithms used in a Unix-like Operating System.
+##Implementation of common algorithms used in a Unix-like Operating System.
 
 To be able to run these programs, you will need a Unix-like operating system. You will also need to have installed CMake package.
 	
