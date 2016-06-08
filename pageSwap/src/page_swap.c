@@ -141,14 +141,14 @@ dyn_array_t* read_page_requests ( const char* const filename) {
 	int fd = open(filename, O_RDONLY);//Read only for the binary formatted file
 	if(fd == -1)//Checking open() worked correctly
 		return NULL;
-	uint32_t numReq = NULL;
+	uint32_t numReq = 0;
 	if(!(read(fd, &numReq, sizeof(uint32_t)))){//Checking that read() worked correctly
 		close(fd);
 		return NULL;
 	}
 	//dyn_array for the page Request
 	dyn_array_t* page_Req = dyn_array_create(numReq, sizeof(unsigned int), NULL);
-	uint32_t page = NULL;
+	uint32_t page = 0;
 	int i = 0;
 	//read from binary fill && push back on page_Req
 	for(i = 0; i < numReq; ++i){
@@ -250,7 +250,7 @@ void setPage_val(const uint32_t pageNum, const uint32_t frameNum)
 uint32_t argMin()
 {
 	unsigned char msb = 128; //most significant bit 
-	uint32_t min = NULL; //holds the index to the minimum accessTrackingByte
+	uint32_t min = 0; //holds the index to the minimum accessTrackingByte
 
 	for(uint32_t i = 0; i < 512; ++i)
 	{
