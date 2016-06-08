@@ -7,7 +7,7 @@ To install CMake, open up a terminal on your local machine and type the command:
 	
 				sudo apt-get install cmake
 
-Also, to run these programs, you will need to build the OS library such that you can dynamic link this library to cache shared libraries on your system.
+Also, to run these programs, you will need to build the OS library such that you can dynamic link the OS library to the cached shared libraries on your system.
 	
 To do this, please clone the OS repository where you will change directories into the lib directory. In the lib directory, please follow the sequence of commands:
 
