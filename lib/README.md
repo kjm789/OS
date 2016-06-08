@@ -1,4 +1,17 @@
 # OS F15 Libraries
+
+You will need to build the OS library such that you can dynamic link the OS library to the cached shared libraries on your system.
+
+To do this, please clone the OS repository where you will change directories into the lib directory. In the lib directory, please follow the sequence of commands:
+
+            			mkdir build         [press enter]
+			            cd build            [press enter]
+						cmake ..            [press enter]
+						sudo make install   [press enter]
+						sudo ldconfig       [press enter]
+
+After you have completed this, you are all set to begin running programs found in this repository. If you have any problems/errors with these commands above, feel free to shoot me an email: koboldtmichael@gmail.com
+
 Current libraries:
 - bitmap (v1.5)
 	- It's a bitmap, it stores bits!
