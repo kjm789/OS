@@ -677,7 +677,7 @@ int fs_get_dir(F15FS_t *const fs, const char *const fname, dir_rec_t *const reco
                         records->total = dir_record->mdata.size;
                         if (dir_record->mdata.size <= DIR_REC_MAX) {
                             for (unsigned rec_total = 0, rec_idx = 0; rec_total < dir_record->mdata.size; ++rec_total, ++rec_idx) {
-                                while (! dir_record->entries[rec_idx].fname[0]) { ++rec_idx; }
+                                while ( !(dir_record->entries[rec_idx].fname)) { ++rec_idx; }
                                 // That should jump us to the next valid entry
 
                                 // OH NO. It seems I was wrong about having all the data ready.
